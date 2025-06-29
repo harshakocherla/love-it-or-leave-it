@@ -53,7 +53,7 @@ fun HomeScreen(
         Button(
             onClick = {
                 gameState.updatePlayerNames(player1Name, player2Name)
-                gameState.setGameMode(selectedGameMode)
+                gameState.updateGameMode(selectedGameMode)
                 onStartGame()
             },
             modifier = Modifier.fillMaxWidth(),

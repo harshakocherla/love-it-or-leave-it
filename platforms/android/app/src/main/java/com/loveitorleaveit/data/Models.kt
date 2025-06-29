@@ -110,7 +110,7 @@ class GameState {
         player2 = player2.copy(name = name2)
     }
 
-    fun setGameMode(mode: GameMode) {
+    fun updateGameMode(mode: GameMode) {
         gameMode = mode
         timeRemaining = if (mode == GameMode.RAPID_FIRE) 120 else null
     }
